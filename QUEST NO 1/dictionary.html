@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Javascript QUEST 1</h2>
+
+<p id="demo"></p>
+<script>
+var dictionary = ['pro', 'gram', 'merit', 'program', 'it', 'programmer']
+
+
+var hasil = []
+
+function strInput(input){
+  dictionary.forEach((data) =>{
+  let check = input.includes(data)
+
+  if(check == true){
+     let hasilCheck = hasil.push(data)     
+  }
+})
+}
+
+strInput = 'programerit' ;
+
+
+console.log(hasil.join(', '))
+</script>
+
+</body>
+</html>
